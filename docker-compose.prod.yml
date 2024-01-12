@@ -1,0 +1,8 @@
+# This file will be executed in production environment, skipping the
+# local database container.
+version: '3.9'
+
+services:
+  web:
+    environment:
+      - NODE_ENV=production
